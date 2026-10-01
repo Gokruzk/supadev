@@ -1,0 +1,19 @@
+supabase/.temp/
+
+# Datos/runtime local
+supabase/.branches/
+supabase/.gitignore
+
+.env
+.env.*
+!.env.example
+
+.DS_Store
+Thumbs.db
+
+.vscode/
+.idea/
+
+*.log
+
+node_modules/
