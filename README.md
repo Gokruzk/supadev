@@ -1,10 +1,10 @@
-# ⚡ supadev — Supabase Local Environment
+# Supabase Local Environment
 
-Entorno de desarrollo local de **Supabase** para el ecosistema **alojaU**. Provee la base de datos PostgreSQL, autenticación (Supabase Auth con OAuth), Storage S3, servidor de correos (Mailpit) y la interfaz gráfica de administración (Supabase Studio).
+Entorno de desarrollo local de Supabase. Provee la base de datos PostgreSQL, autenticación (Supabase Auth con OAuth), Storage S3, servidor de correos (Mailpit) y la interfaz gráfica de administración (Supabase Studio).
 
 ---
 
-## 📋 Servicios y Puertos Locales
+## Servicios y Puertos Locales
 
 Cuando el entorno de Supabase está activo (`supabase start`), los siguientes servicios están disponibles:
 
