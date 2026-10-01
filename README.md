@@ -18,7 +18,7 @@ Cuando el entorno de Supabase está activo (`supabase start`), los siguientes se
 
 ---
 
-## 🚀 Requisitos Previos
+## Requisitos Previos
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) (debe estar en ejecución).
 - [Supabase CLI](https://supabase.com/docs/guides/local-development/cli/getting-started):
@@ -33,7 +33,7 @@ Cuando el entorno de Supabase está activo (`supabase start`), los siguientes se
 
 ---
 
-## 🛠️ Comandos Principales
+## Comandos Principales
 
 Ejecuta estos comandos dentro del directorio `supadev/`:
 
@@ -61,7 +61,7 @@ supabase status
 
 ---
 
-## 🔐 Configuración de Variables de Entorno
+## Configuración de Variables de Entorno
 
 El archivo [`supabase/config.toml`](./supabase/config.toml) utiliza variables de entorno para servicios externos (como Google OAuth y llaves API). Puedes definir estas variables en tu entorno o en un archivo `.env` en la raíz de `supadev/`:
 
@@ -76,9 +76,9 @@ OPENAI_API_KEY=tu_openai_key
 
 ---
 
-## 🔄 Flujo de Trabajo con el Backend (Alembic)
+## Flujo de Trabajo con Backend
 
-En este proyecto, **Alembic es la única fuente de verdad** para las tablas del esquema de la aplicación (`app`).
+En este proyecto, la herramienta que utilices para migración será la fuenta de la estructura de las tablas del esquema de la aplicación.
 
 1. **Iniciar Supabase Local:**
    ```bash
@@ -86,18 +86,12 @@ En este proyecto, **Alembic es la única fuente de verdad** para las tablas del 
    supabase start
    ```
 
-2. **Aplicar las migraciones de la aplicación desde el backend:**
-   ```bash
-   cd ../backend
-   make dev-migrate
-   ```
-
-3. **Explorar datos en Supabase Studio:**
-   Abre [`http://127.0.0.1:54323`](http://127.0.0.1:54323) para inspeccionar usuarios (`auth.users`) y entidades de la plataforma (`app.users`, `app.properties`, `app.rental_units`, etc.).
+2. **Explorar datos en Supabase Studio:**
+   Abre [`http://127.0.0.1:54323`](http://127.0.0.1:54323) para inspeccionar usuarios (`auth.users`)
 
 ---
 
-## 📬 Pruebas de Correo Electrónico
+## Pruebas de Correo Electrónico
 
 Los correos de confirmación, restablecimiento de contraseña y alertas generadas en local no se envían a internet. Se capturan en **Mailpit**:
 👉 Abre [`http://127.0.0.1:54324`](http://127.0.0.1:54324) para ver todos los correos entrantes de prueba en tiempo real.
